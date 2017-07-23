@@ -28,7 +28,7 @@ The goals / steps of this project are the following:
 [image3]: ./images/preprocessd.png "Preprocessed images"
 [image4]: ./images/augmentation.png "Transform images"
 [image5]: ./images/augmented_visualization.png " Augmented Visualization"
-[image6]: ./test/image0.png "Traffic Sign 1"
+[image6]: ./test/image0.PNG "Traffic Sign 1"
 [image7]: ./test/image1.png "Traffic Sign 2"
 [image8]: ./test/image2.png "Traffic Sign 3"
 [image9]: ./test/image3.png "Traffic Sign 4"
@@ -37,7 +37,7 @@ The goals / steps of this project are the following:
 [image12]: ./test/image6.png "Traffic Sign 7"
 [image13]: ./test/image7.png "Traffic Sign 8"
 [image14]: ./test/image8.png "Traffic Sign 9"
-[image15]: ./test/image9.png "Traffic Sign 10"
+[image15]: ./test/image9.PNG "Traffic Sign 10"
 
 
 ## Rubric Points
@@ -276,18 +276,18 @@ Discuss the model's predictions on these new traffic signs and compare the resul
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction (Percentage)	        			|
-|:---------------------:|:--------------------------------------:|
-| Priority road      		| Priority road (100.00%)   	|
-| Pedestrians  			    | Traffic signals (78.37%)			|
-| Stop				        | Stop (100.00%)				|
-| Roundabout mandatory	    | Roundabout mandatory (92.14%)	|
-| Keep right		        | Keep right (100.00%)     		|
-| Speed limit 50km/h		| Speed limit (50km/h) (100.00%) |
-| No passing for vehicles over 3.5 metric tons		| No passing for vehicles over 3.5 metric tons (100.00%) |
-| Speed limit 30km/h		| Speed limit (30km/h) (100.00%)  |
-| Right-of-way at the next intersectio		| Right-of-way at the next intersection (100.00%)   |
-| No entry		| No entry (100.00%)   						|
+| Image			        |     Prediction (Percentage)	        			| Result |
+|:---------------------:|:--------------------------------------:|:-----------------:|
+| Priority road      		| Priority road (100.00%)   	| Right
+| Pedestrians  			    | Traffic signals (78.37%)			| Wrong
+| Stop				        | Stop (100.00%)				|Right
+| Roundabout mandatory	    | Roundabout mandatory (92.14%)	|Right
+| Keep right		        | Keep right (100.00%)     		|Right
+| Speed limit 50km/h		| Speed limit (50km/h) (100.00%) |Right
+| No passing for vehicles over 3.5 metric tons		| No passing for vehicles over 3.5 metric tons (100.00%) |Right
+| Speed limit 30km/h		| Speed limit (30km/h) (100.00%)  |Right
+| Right-of-way at the next intersectio		| Right-of-way at the next intersection (100.00%)   |Right
+| No entry		| No entry (100.00%)   						|Right
 
 The model was able to correctly guess 9 of the 10 traffic signs, which gives an accuracy of 90%.
 
@@ -300,8 +300,7 @@ It's possible to choose some more critical signs to let the model predict. The c
 #### 3. Top 5 Softmax Propabilities
 Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign.
-The top five soft max probabilities were
+The top five soft max probabilities are shown in the following tables.
 
 ##### Image 1
 
@@ -317,11 +316,11 @@ The top five soft max probabilities were
 
 | Prediction    |     Probability	  	|
 |:-------------:|:---------------------:|
-|Traffic signals (78.37%)
-|Road narrows on the right (20.07%)
-|Dangerous curve to the left (1.43%)
-|Pedestrians (0.12%)
-|Speed limit (120km/h) (0.01%)
+|Traffic signals |(78.37%)
+|Road narrows on the right |(20.07%)
+|Dangerous curve to the left |(1.43%)
+|Pedestrians |(0.12%)
+|Speed limit (120km/h) |(0.01%)
 
 ##### Image 3
 | Prediction    |     Probability	  	|
@@ -407,6 +406,6 @@ Most images are almost predicted definetly.
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
-This question is a bit hard to resolve for me. Because the model architectrue is not designed to analysis the weights and layers. Could you please give me some hints for this question so I can update it later.
+This question is a bit hard to resolve for me. Because the model architecture is not designed to analysis the weights and layers. Could you please give me some hints for this question so I can update it later.
 
 
